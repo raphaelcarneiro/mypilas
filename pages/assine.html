@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MyPilas</title>
+
+    <link rel="stylesheet" href="../css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+  </head>
+  <body>
+
+    <header class="layout-header">
+      <div class="container">
+
+        <nav class="navigation-bar  navigation-bar--subscribe">
+          <a href="../index.html"><img src="../img/logo.png" width="100" height="35" alt="MyPilas" /></a>
+        </nav>
+
+      </div>
+    </header>
+
+    <main class="layout-subscribe">
+      <div class="container">
+
+        <form action="#" method="post">
+          <h1 class="form-title">Sua assinatura do MyPilas</h1>
+
+          <div class="input-group">
+            <label for="company-name">Razão Social</label>
+            <input id="company-name" name="companyName" type="text" class="field" required />
+          </div>
+
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="input-group">
+                <label for="cnpj">CNPJ</label>
+                <input id="cnpj" name="cnpj" type="text" class="field" required />
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <div class="input-group">
+                <label for="opening-date">Data de fundação</label>
+                <input id="opening-date" name="openingDate" type="date" class="field" required />
+              </div>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="manager">Responsável</label>
+            <input id="manager" name="manager" type="text" class="field" required />
+          </div>
+
+          <div class="input-group">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" class="field" required />
+          </div>
+
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="input-group">
+                <label for="state">Estado</label>
+                <select id="state" name="state" class="field">
+                  <option>Selecione</option>
+                  <option value="MG">Minas Gerais</option>
+                  <option value="PR">Paraná</option>
+                  <option value="SP">São Paulo</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <div class="input-group">
+                <label for="city">Cidade</label>
+                <select id="city" name="city" class="field">
+                  <option>Selecione</option>
+                  <option value="1">Belo Horizonte</option>
+                  <option value="2">Curitiba</option>
+                  <option value="3">São Paulo</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="input-group">
+                <label for="password">Senha</label>
+                <input id="password" name="password" type="password" class="field" required />
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <div class="input-group">
+                <label for="password-confirmation">Confirme a senha</label>
+                <input id="password-confirmation" name="passwordConfirmation" type="password" class="field" required />
+              </div>
+            </div>
+          </div>
+
+          <div class="layout-button-subscribe">
+            <input type="submit" value="Assinar MyPilas" class="button  button--main" />
+          </div>
+        </form>
+
+      </div>
+    </main>
+
+    <footer class="layout-footer">
+      <div class="container">
+        <p>&reg; MyPilas. Todos os direitos reservados</p>
+      </div>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,334 @@
+/*--------------------*\
+  PLAN
+\*--------------------*/
+.plan {
+  position: relative;
+
+  border: 1px solid #95a4a5;
+  padding: 10px;
+
+  font-size: 1.4rem;
+}
+
+.plan--most-popular::after {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+
+  padding: 0 10px;
+
+  background-color: #c20303;
+  color: #fff;
+
+  font-size: 0.7142857em;
+  line-height: 2.5;
+
+  content: "MAIS POPULAR"
+}
+
+.plan__header {
+  margin: -10px;
+  margin-bottom: 0;
+
+  background-color: #95a4a5;
+  color: #fff;
+
+  text-align: center;
+  line-height: 2.5;
+  font-weight: normal;
+  font-size: 2em;
+}
+
+.plan__price {
+  margin: 20px 0;
+
+  text-align: center;
+  font-size: 2em;
+}
+
+.plan__features {
+  padding: 0;
+  margin: 20px 0;
+
+  font-size: 1em;
+
+  list-style: none;
+}
+
+.plan__features > li {
+  text-align: center;
+}
+
+.plan__footer {
+  text-align: center;
+}
+
+
+/*--------------------*\
+  BUTTON
+\*--------------------*/
+.button {
+  display: inline-block;
+  padding: 0.8em 1.2em;
+
+  background-color: #bbb;
+  color: #fff;
+  border: none;
+
+  line-height: normal;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+.button:hover, .button:focus {
+  background-color: #aaa;
+  color: #fff;
+
+  text-decoration: none;
+}
+
+.button--subscribe, .button--login {
+  background-color: #127d00;
+}
+
+.button--subscribe:hover, .button--subscribe:focus,
+.button--login:hover, .button--login:focus {
+  background-color: #0e6400;
+}
+
+.button--main {
+  border-radius: 10px;
+
+  background-color: #004b86;
+}
+
+.button--main:hover, .button--main:focus {
+  background-color: #003b6a;
+}
+
+
+/*--------------------*\
+  PLANS-LINK
+\*--------------------*/
+.plans-link {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.plans-link__title {
+  margin: 0;
+
+  color: #fff;
+
+  font-size: 3.375em;
+  line-height: 0.9;
+  text-shadow: 1px 1px #313131;
+}
+
+.plans-link__subtitle {
+  margin: 60px 0;
+
+  color: #fff;
+
+  font-size: 1em;
+}
+
+.plans-link__action {
+  font-size: 1em;
+}
+
+@media(min-width: 992px) {
+  .plans-link {
+    padding-left: 10%;
+    padding-right: 10%;
+
+    font-size: 2.2rem;
+  }
+}
+
+
+/*--------------------*\
+  TESTIMONIAL
+\*--------------------*/
+.testimonial {
+  font-size: 2.2rem;
+}
+
+@media(min-width: 992px) {
+  .testimonial {
+    padding-left: 15%;
+    padding-right: 15%;
+
+    font-size: 2.8rem;
+  }
+}
+
+.testimonial > blockquote {
+  position: relative;
+
+  margin: 0;
+  padding: 0 60px;
+
+  text-align: center;
+  font-size: 1em;
+}
+
+.testimonial > blockquote::before {
+  position: absolute;
+  left: 0;
+  top: -0.35em;
+
+  color: #ccc;
+
+  font-size: 8em;
+
+  content: "\201C";
+}
+
+.testimonial__author {
+  margin-top: 40px;
+
+  text-align: center;
+  font-size: 0.7272em;
+}
+
+.testimonial__author > img {
+  border-radius: 50%;
+}
+
+.testimonial__author > p {
+  margin-top: 10px;
+}
+
+
+/*--------------------*\
+  NAVIGATION-BAR
+\*--------------------*/
+.navigation-bar--subscribe {
+  text-align: center;
+}
+
+.navigation-bar__menu {
+  float: right;
+}
+
+
+/*--------------------*\
+  SWITCH-BUTTON
+\*--------------------*/
+.switch-button {
+  width: 24px;
+  height: 24px;
+  border: 0;
+
+  background: none;
+  background-image: url("../img/bars.png");
+
+  outline: none;
+}
+
+@media(min-width: 992px) {
+  .switch-button {
+    display: none;
+  }
+}
+
+
+/*--------------------*\
+  MENU
+\*--------------------*/
+.menu {
+  margin: 0;
+
+  font-size: 1.4rem;
+
+  list-style: none;
+}
+
+@media(max-width: 991px) {
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+    display: none;
+    width: 200px;
+    padding: 20px;
+    border-right: 1px solid #eee;
+
+    background-color: #fbfbfb;
+  }
+
+  .menu--showing {
+    display: block;
+  }
+
+  .menu__item {
+    display: block;
+
+    line-height: 3;
+  }
+
+  .menu__item--button {
+    margin-top: 20px;
+  }
+}
+
+@media(min-width: 992px) {
+  .menu__item {
+    display: inline-block;
+    padding-right: 20px;
+  }
+
+  .menu__item:last-of-type {
+    padding-right: 0;
+  }
+}
+
+
+/*--------------------*\
+  FORM-TITLE
+\*--------------------*/
+.form-title {
+  margin: 0;
+  margin-bottom: 40px;
+
+  border-bottom: 1px solid #ccc;
+
+  font-size: 2.6rem;
+  font-weight: normal;
+  color: #004b86;
+}
+
+
+/*--------------------*\
+  INPUT-GROUP
+\*--------------------*/
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group > label {
+  display: block;
+
+  font-weight: bold;
+}
+
+
+/*--------------------*\
+  FIELD
+\*--------------------*/
+.field {
+  display: block;
+  width: 100%;
+  height: 2.8em;
+
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+  background-color: #fff;
+
+  font-size: 1.4rem;
+}
